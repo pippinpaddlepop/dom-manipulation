@@ -34,3 +34,18 @@ const headdiv = document.createElement('h1');
 headdiv.textContent = "im in a div";
 
 div2.appendChild(headdiv);
+
+//nested p tag
+const nestPara = document.createElement('p');
+nestPara.textContent = "ME TOO!";
+
+//appending to div2
+
+div2.appendChild(nestPara);
+
+// get hold of button
+
+const button = document.querySelector('#clickMe');
+button.addEventListener('click',() =>{
+    alert('hello world');
+})
